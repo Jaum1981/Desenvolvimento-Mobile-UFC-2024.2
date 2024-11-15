@@ -1,0 +1,265 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Descrição -->
+            <TextView
+                android:id="@+id/pokemon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gengar(Não irônicamente)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"/>
+
+            <!-- Foto perfil -->
+            <ImageView
+                android:id="@+id/pokemonImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gengar_nao_ironicamente_"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/profile_image_description"/>
+
+            <!-- Descrição -->
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To steal the life of its target, it slips into the prey’s shadow and silently waits for an opportunity."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"/>
+
+            <!-- Seção de Versões -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="16dp">
+
+                <!-- Icones das Versões -->
+                <ImageView
+                    android:id="@+id/icon_version1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/icon_version1"
+                    android:layout_marginEnd="8dp"/>
+
+                <ImageView
+                    android:id="@+id/icon_version2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/icon_version2"/>
+            </LinearLayout>
+
+            <!-- Card com Informações -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/details_background">
+
+                <!-- Altura e Categoria -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/pokemon_height"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Height: 1.5 m"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/pokemon_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Category: Shadow"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <!-- Peso e Habilidades -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/pokemon_weight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Weight: 40.5 kg"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/pokemon_ability"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ability: Cursed Body"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <!-- Gênero -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/pokemon_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender:"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <!-- Ícones de gênero -->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_male"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="4dp"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_female"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Tipos -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="16dp">
+
+                <!-- Tipo Ghost -->
+                <TextView
+                    android:id="@+id/ghostType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ghost"
+                    android:background="@drawable/ghost_type_background"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"/>
+
+                <!-- Tipo Poison -->
+                <TextView
+                    android:id="@+id/poisonType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poison"
+                    android:background="@drawable/poison_type_background"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- Fraquezas -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weaknesses"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingTop="16dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Fraquezas específicas -->
+                <TextView
+                    android:id="@+id/groundWeakness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ground"
+                    android:background="@drawable/ground_type_background"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/psychicWeakness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Psychic"
+                    android:background="@drawable/psychic_type_background"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/ghostWeakness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ghost"
+                    android:background="@drawable/ghost_type_background"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/darkWeakness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark"
+                    android:background="@drawable/dark_type_background"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

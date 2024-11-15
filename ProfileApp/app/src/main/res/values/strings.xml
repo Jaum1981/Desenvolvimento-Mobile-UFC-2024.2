@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProfileApp</string>
+    <string name="profile_image_description">Foto de perfil do usuário</string>
+    <string name="gengar_description">To steal the life of its target, it slips into the prey’s shadow and silently waits for an opportunity.</string>
+    <string name="emprego_atual_pokemon">Emprego Atual: Pokemon</string>
+    <string name="gengar_name">Gengar (não irônicamente)</string>
+</resources>
