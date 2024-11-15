@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Cor de fundo da caixinha -->
+    <solid android:color="#FFFFFF"/> <!-- Cor white -->
+
+    <!-- Define as bordas arredondadas -->
+    <corners android:radius="16dp"/> <!-- Define o raio da borda arredondada -->
+
+    <!-- Opcional: Borda (stroke) ao redor da caixinha -->
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF"/> <!-- Cor da borda -->
+</shape>
