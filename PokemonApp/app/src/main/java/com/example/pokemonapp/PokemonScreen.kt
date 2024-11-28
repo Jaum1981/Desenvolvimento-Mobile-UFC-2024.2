@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun PokemonScreen(pokemon: String) {
     val context = LocalContext.current
-    val imageRes = if (pokemon == "Gengar") R.drawable.gengartriste else R.drawable.pikachu_surprise
+    val imageRes = if (pokemon == "Gengar") R.drawable.gengartriste else R.drawable.pikachu_o
     val soundRes = if (pokemon == "Gengar") R.raw.gengar_sound else R.raw.pikachu_sound
     val videoRes = if (pokemon == "Gengar") R.raw.gengar_video else R.raw.pikachu_video
 
