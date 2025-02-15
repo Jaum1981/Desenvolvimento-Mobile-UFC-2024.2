@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "152287332320",
+    "project_id": "testeauth-7e0fd",
+    "storage_bucket": "testeauth-7e0fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152287332320:android:4b44fb7289a1d788e60d85",
+        "android_client_info": {
+          "package_name": "com.example.testauthapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152287332320-an3to5h25pu06suljudiqh0ttkh97nca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testauthapp",
+            "certificate_hash": "1ed92f39b7ad51023de86c9439e5b716b9c1c66b"
+          }
+        },
+        {
+          "client_id": "152287332320-el10ukv2oss70o6p2361cah03frcspsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9vkbioZdEd46OEGvpacCHKr2ib2upS6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152287332320-el10ukv2oss70o6p2361cah03frcspsi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
